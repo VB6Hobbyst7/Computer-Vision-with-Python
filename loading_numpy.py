@@ -3,8 +3,6 @@ import matplotlib.pyplot as plt
 import cv2
 
 #Image for Numpy
-img = plt.imread('C:/Users/Mazedur Rahman/Downloads/person.jpg')
-
 print(type(img))
 print(img.shape)
 print(img.ndim)
@@ -18,6 +16,21 @@ print(img[10, 10, 2])
 
 print(img[10,10,:])
 print(img[10,10])
+
+#Image for Statistics
+img = plt.imread('C:/Users/Mazedur Rahman/Downloads/person.jpg')
+
+print(img.min())
+print(img.max())
+print(img.mean())
+
+#Image for Statistics using numpy
+
+print(np.mean(img))
+print(np.median(img))
+print(np.std(img))
+print(np.var(img))
+
 
 
 
